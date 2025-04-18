@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-
-const nextConfig = {
+module.exports = {
+  output: 'standalone',  // 确保启用了 standalone 模式
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true,  // 如果你不想让 ESLint 阻止构建
   },
-  // 不使用 standalone 配置
 };
-
-module.exports = nextConfig;
